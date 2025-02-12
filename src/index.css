@@ -1,0 +1,61 @@
+@import "tailwindcss";
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Example font */
+}
+/* Cyan Highlight */
+.highlight-cyan {
+  @apply relative inline-block; /* Needed for absolute positioning of the pseudo-element */
+}
+
+.highlight-cyan::before {
+  content: "";
+  position: absolute;
+  left: -4px; /* Adjust left offset as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 8px); /* Adjust width to cover padding */
+  height: 1.4em; /* Adjust height to match line height */
+  background-color: rgba(0, 255, 255, 0.3); /* Cyan with opacity */
+  z-index: -1; /* Place behind the text */
+  border-radius: 4px; /* Optional: Rounded corners */
+  padding: 0 4px; /* Add padding to the highlight */
+}
+
+/* Amber Highlight */
+.highlight-amber {
+  @apply relative inline-block;
+}
+
+.highlight-amber::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 8px);
+  height: 1.4em;
+  background-color: rgba(255, 193, 7, 0.3); /* Amber with opacity */
+  z-index: -1;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* Blue Highlight */
+.highlight-blue {
+  @apply relative inline-block;
+}
+
+.highlight-blue::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 8px);
+  height: 1.4em;
+  background-color: rgba(0, 0, 255, 0.2); /* Blue with opacity */
+  z-index: -1;
+  border-radius: 4px;
+  padding: 0 4px;
+}
