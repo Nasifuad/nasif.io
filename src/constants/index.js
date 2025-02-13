@@ -1,4 +1,23 @@
 import { FiGithub, FiLinkedin, FiDownload, FiMail } from "react-icons/fi";
+import {
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  threejs,
+  debuggers,
+  talkhive,
+  zenflow,
+  ecommerce,
+} from "../assets/tech";
 
 export const socialLinks = [
   {
@@ -36,27 +55,103 @@ export const navLinks = [
     to: "/contact",
   },
   {
-    name: "Blog",
-    to: "/blog",
+    name: "Skill",
+    to: "/skill",
   },
 ];
 export const projects = [
   {
-    category: "OS Applications",
-    title: "Appasm (OS)",
+    category: "MERN Application",
+    title: "The Debuggers Journal",
     description:
-      "Lacking financial news and analytics platforms in the Gulf, providing real-time information",
+      "A MERN application to post about daily debugging problems and solutions",
+    link: "https://the-debuggers-journal-e2f6.vercel.app/",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    image: debuggers,
+    github: "https://github.com/Nasifuad/the-debuggers-journal",
   },
   {
-    category: "Android Apps",
-    title: "Appasm (Android)",
+    category: "MERN Application",
+    title: "TalkHive.io",
     description:
-      "Lacking financial news and analysis platforms in the Gulf, providing real-time information",
+      "Real Time Chat Application for collaboration and communication",
+    link: "https://talkhive.vercel.app/",
+    tech: ["MongoDB", "Socket-io", "Express", "React", "Node.js"],
+    image: talkhive,
+    github: "https://github.com/Nasifuad/TalkHive",
   },
   {
-    category: "Future Apps",
-    title: "Objectify",
+    category: "Frontend Application",
+    title: "Zenflow",
     description:
-      "Financial news and analysis platform providing real-time information",
+      "Product Landing Page for Shoes with interactive slide features and review",
+    link: "https://nasifuad.github.io/ZenFlow/",
+    tech: ["React", "Tailwind CSS"],
+    image: zenflow,
+    github: "https://github.com/Nasifuad/ZenFlow",
+  },
+  {
+    category: "Frontend Application",
+    title: "Ecommerce Product Page",
+    description:
+      "Customized Product page with interactive slide features and review",
+    link: "https://nasifuad.github.io/Ecommarce-Product-Page/",
+    tech: ["React", "Tailwind CSS"],
+    image: ecommerce,
+    github: "https://github.com/Nasifuad/Ecommarce-Product-Page",
+  },
+];
+export const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "docker",
+    icon: docker,
   },
 ];
