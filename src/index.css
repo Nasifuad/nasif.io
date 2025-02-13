@@ -8,6 +8,17 @@ body {
 .highlight-cyan {
   @apply relative inline-block; /* Needed for absolute positioning of the pseudo-element */
 }
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow-y: auto; /* Ensure scrolling still works */
+}
 
 .highlight-cyan::before {
   content: "";

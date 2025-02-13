@@ -29,7 +29,7 @@ const Skill = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.2 }}
-      className="container mx-auto py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br rounded-2xl from-gray-900 to-gray-800 text-gray-100"
+      className="container mx-auto py-20 px-6 md:px-12 lg:px-24 text-gray-100"
     >
       {/* Left Border Line Wrapper */}
       <div className="relative flex gap-8">

@@ -33,7 +33,7 @@ const About = () => {
   };
 
   return (
-    <section className="container mx-auto py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br rounded-2xl from-gray-900 to-gray-800 text-gray-100">
+    <section className="container mx-auto py-20 px-6 md:px-12 lg:px-24  rounded-2xl  text-gray-100">
       {/* Header Section */}
       <motion.div
         variants={containerVariants}
@@ -105,95 +105,79 @@ const About = () => {
       </motion.div>
 
       {/* About Content */}
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
-        className="grid md:grid-cols-2 gap-12 mb-16"
+        className="grid md:grid-cols-2 gap-12 mb-16 relative"
       >
+        {/* Gradient Decoration */}
+        <div className="absolute -top-12 -left-12 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-full blur-3xl -z-10" />
+
         {/* Left Column */}
         <div className="space-y-6 text-lg text-gray-300 relative">
           <div className="absolute -left-6 top-0 h-full w-1 bg-gradient-to-b from-cyan-500 to-blue-600 rounded-full" />
-          {/* <p className="relative nas pl-8">
-            I am a Full Stack Developer with expertise in native (
-            <span className="highlight-cyan">Android & iOS</span>) and
-            cross-platform (<span className="highlight-cyan">Flutter</span>)
-            development. I specialize in creating user-friendly, scalable, and
-            minimalistic solutions using{" "}
-            <span className="highlight-amber">Swift</span>,
-            <span className="highlight-blue">Java</span>,
-            <span className="highlight-blue">Dart</span>, and tools like{" "}
-            <span className="highlight-cyan">Android Studio</span>,
-            <span className="highlight-cyan">Xcode</span>, and
-            <span className="highlight-cyan">VS Code</span>.
-          </p> */}
-          <p className="relative nas pl-8">
-            I am a Full Stack Developer with expertise in (
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Web and Mobile
-            </span>
-            ) and cross-platform (
-            <span className="bg-gradient-to-r from-green-400 to-lime-500 bg-clip-text text-transparent">
-              React Native
-            </span>
-            ) development. I specialize in creating user-friendly, scalable, and
-            minimalistic solutions using{" "}
-            <span className="bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
-              Node JS
-            </span>
-            ,
-            <span className="bg-gradient-to-r from-green-400 to-lime-500 bg-clip-text text-transparent">
-              Next JS
-            </span>
-            ,
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
-              React
-            </span>
-            ,
-            <span className="bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-text text-transparent">
-              Express
-            </span>
-            , and tools like{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-teal-500 bg-clip-text text-transparent">
-              Github, Vercel
-            </span>
-            ,
-            <span className="bg-gradient-to-r from-gray-500 to-gray-200 bg-clip-text text-transparent">
-              Docker
-            </span>
-            , and
-            <span className="bg-gradient-to-r from-pink-400 to-red-500 bg-clip-text text-transparent">
-              VS Code
-            </span>
-            .
-          </p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            className="relative pl-8 leading-relaxed"
+          >
+            I&apos;m a Full Stack Developer specializing in{" "}
+            <span className="highlight-gradient-cyan">web/mobile</span> and{" "}
+            <span className="highlight-gradient-green">cross-platform</span>{" "}
+            solutions. My toolkit includes modern technologies like{" "}
+            <TechPill color="from-yellow-400 to-amber-500">Node.js</TechPill>,{" "}
+            <TechPill color="from-green-400 to-lime-500">Next.js</TechPill>,{" "}
+            <TechPill color="from-blue-400 to-cyan-500">React</TechPill>, and{" "}
+            <TechPill color="from-purple-400 to-violet-500">Express</TechPill>.
+            I leverage tools like{" "}
+            <TechPill color="from-cyan-400 to-teal-500">
+              GitHub & Vercel
+            </TechPill>
+            , <TechPill color="from-gray-500 to-gray-200">Docker</TechPill>, and{" "}
+            <TechPill color="from-pink-400 to-red-500">VS Code</TechPill> to
+            build scalable, user-centric applications.
+          </motion.p>
         </div>
 
         {/* Right Column */}
-        <div className="space-y-6 text-lg text-gray-300">
-          <p>
-            Throughout my career, I have built robust applications, modernized
-            legacy systems, and mentored junior developers. Currently seeking
-            new challenges to create impactful solutions.
-          </p>
+        <div className="space-y-8">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="text-lg text-gray-300 leading-relaxed"
+          >
+            With a track record of modernizing legacy systems and mentoring
+            teams, I&apos;m currently focused on tackling complex challenges
+            through innovative full-stack solutions that create measurable
+            impact.
+          </motion.p>
 
           {/* Social Links */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
-            className="flex flex-wrap gap-4 mt-6"
+            transition={{ delay: 1.4 }}
+            className="flex flex-wrap gap-3"
           >
-            {socialLinks.map((link) => (
+            {socialLinks.map((link, index) => (
               <motion.a
                 key={link.name}
                 href={link.to}
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-6 py-3 bg-gray-800/50 backdrop-blur-sm rounded-xl hover:bg-gradient-to-r from-cyan-600/20 to-blue-700/20 border border-cyan-500/20 transition-all"
+                transition={{ type: "spring", stiffness: 300 }}
+                className="group flex items-center gap-2 px-4 py-2.5 bg-gray-800/50 backdrop-blur-sm 
+                     rounded-lg hover:bg-gradient-to-r from-cyan-600/20 to-blue-700/20 
+                     border border-cyan-500/30 hover:border-cyan-400/50 transition-all"
+                custom={index}
               >
-                <link.icon className="text-xl text-cyan-400" />
-                <span className="hidden md:inline text-gray-200">
+                <link.icon className="text-xl text-cyan-400 group-hover:text-cyan-300 transition-colors" />
+                <span className="text-gray-200 group-hover:text-cyan-50 transition-colors">
                   {link.name}
                 </span>
               </motion.a>
@@ -206,3 +190,17 @@ const About = () => {
 };
 
 export default About;
+// TechPill Component (add to your components)
+// eslint-disable-next-line react/prop-types
+const TechPill = ({ children, color }) => (
+  <span
+    className={`relative inline-block px-2 py-1 bg-gradient-to-r ${color} 
+                   text-transparent bg-clip-text font-medium`}
+  >
+    {children}
+    <span
+      className={`absolute inset-0 bg-gradient-to-r ${color} rounded-lg 
+                     opacity-10 -z-10`}
+    />
+  </span>
+);

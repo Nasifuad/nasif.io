@@ -1,4 +1,7 @@
 import About from "./component/About";
+import Contact from "./component/Contract";
+import Experience from "./component/Experience";
+import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import Projects from "./component/Projects";
 import Services from "./component/Services";
@@ -12,6 +15,9 @@ const App = () => {
       <Skill />
       <Projects />
       <Services />
+      <Experience />
+      <Contact />
+      <Footer />
     </div>
   );
 };
