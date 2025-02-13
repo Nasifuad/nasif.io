@@ -18,7 +18,10 @@ const Projects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section className="container mx-auto px-6 py-10 flex flex-col rounded-lg  bg-[#0C182E] text-white">
+    <section
+      id="projects"
+      className="container mx-auto px-6 py-10 flex flex-col rounded-lg  bg-[#0C182E] text-white"
+    >
       <div className="relative flex gap-8">
         {/* Left Line */}
         <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-cyan-500 to-blue-600 rounded-full" />

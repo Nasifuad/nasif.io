@@ -44,19 +44,23 @@ export const socialLinks = [
 export const navLinks = [
   {
     name: "About Me",
-    to: "/about",
+    to: "#",
   },
   {
     name: "Resume",
-    to: "/resume",
+    to: "#",
   },
   {
     name: "Contact",
-    to: "/contact",
+    to: "#contact",
   },
   {
     name: "Skill",
-    to: "/skill",
+    to: "#skill",
+  },
+  {
+    name: "Projects",
+    to: "#projects",
   },
 ];
 export const projects = [

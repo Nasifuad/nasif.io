@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
 /* General Styles */
 body {
   font-family: "Roboto", sans-serif; /* Example font */
@@ -15,6 +16,7 @@ body {
 
 html,
 body {
+  scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   overflow-y: auto; /* Ensure scrolling still works */

@@ -3,7 +3,10 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <section className="container mx-auto px-6 py-16 flex flex-col rounded-lg  bg-[#0C182E] text-white">
+    <section
+      id="contact"
+      className="container mx-auto px-6 py-16 flex flex-col rounded-lg  bg-[#0C182E] text-white"
+    >
       {/* Section Header */}
       <div className="relative flex gap-8">
         <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-cyan-500 to-blue-600 rounded-full" />
