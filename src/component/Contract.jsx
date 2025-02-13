@@ -32,15 +32,15 @@ const Contact = () => {
           </h3>
           <div className="flex items-center gap-4">
             <FiMail size={24} className="text-cyan-400" />
-            <p className="text-lg">your.email@example.com</p>
+            <p className="text-lg">nasifuad007@gmail.com</p>
           </div>
           <div className="flex items-center gap-4">
             <FiPhone size={24} className="text-cyan-400" />
-            <p className="text-lg">+123 456 7890</p>
+            <p className="text-lg">+880-1953726489</p>
           </div>
           <div className="flex items-center gap-4">
             <FiMapPin size={24} className="text-cyan-400" />
-            <p className="text-lg">Your City, Country</p>
+            <p className="text-lg">Dhaka, Bangladesh</p>
           </div>
         </motion.div>
 
