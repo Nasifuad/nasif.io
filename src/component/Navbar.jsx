@@ -61,7 +61,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-[#0C182E]/90 backdrop-blur-md p-5 flex flex-col items-center gap-4 xl:hidden">
+        <div className="absolute top-20 left-0 w-max bg-[#0C182E]/90 backdrop-blur-md p-5 flex flex-col items-center gap-4 xl:hidden">
           {navLinks.map((link) => (
             <a
               href={link.to}
